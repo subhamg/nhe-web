@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'calibriR';
-  src: url(../fonts/Calibri-Regular.ttf);
+  font-family: 'SF-Pro-Display-Regular.otf';
+  src: url(../fonts/SF-Pro-Display-Regular.otf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'calibriB';
-  src: url(../fonts/Calibri-Bold.TTF);
+  font-family: 'SF-Pro-Display-Heavy';
+  src: url(../fonts/SF-Pro-Display-Heavy.otf);
   font-weight: normal;
 }
+
 section {
   padding: 4rem;
 }
 
 #mainNav .navbar-brand {
-  color: #997fec;
+  color: #0052ca;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
@@ -22,27 +23,33 @@ section {
 }
 
 #mainNav.navbar-shrink .navbar-brand {
-  color: #997fec;
+  color: #0052ca;
 }
 
 #mainNav.navbar-shrink .navbar-brand:focus,
 #mainNav.navbar-shrink .navbar-brand:hover {
-  color: #997fec;
+  color: #0052ca;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.4;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.8;
 }
 
 #mainNav .navbar-brand {
-  font-family: 'Hepta Slab', serif;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 #mainNav.navbar-scrolled .navbar-brand {
-  font-family: 'Hepta Slab', serif;
-  color: #997fec !important;
+  font-family: 'Rubik', sans-serif;
+  color: #0052ca !important;
+  letter-spacing: 0.5px;
 }
 
 #mainNav.navbar-scrolled .navbar-brand:hover,
@@ -50,7 +57,12 @@ section {
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover {
-  color: #997fec !important;
+  color: #0052ca !important;
+  opacity: 1;
+}
+
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+  opacity: 1;
 }
 
 header .masthead {
@@ -63,14 +75,14 @@ header .masthead {
 }
 
 .text-tagline {
-  font-family: 'calibriB';
-  font-size: 2.5rem !important;
-  margin-top: 3rem;
+  font-family: 'SF-Pro-Display-Heavy';
+  font-size: 3.5rem !important;
+  margin-top: -5rem;
   font-weight: bold;
 }
 
 header.masthed p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -90,10 +102,12 @@ header.masthed p {
 } */
 
 .section-heading {
-  font-family: 'calibriB';
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #2f456c;
   padding-top: 3rem;
+  font-size: 1.2em;
+  opacity: 0.8;
 }
 
 hr.light {
@@ -101,12 +115,12 @@ hr.light {
 }
 
 .text-line {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   position: relative;
   color: rgba(84, 94, 111, 1);
   line-height: 24px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-top: 0.5rem;
 }
 
@@ -115,12 +129,12 @@ hr.light {
 }
 
 .about-features {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   position: relative;
   color: rgba(84, 94, 111, 0.8);
   line-height: 24px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-top: 0.5rem;
 }
 
@@ -174,7 +188,7 @@ hr.light {
 }
 
 .text-muted {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   position: relative;
   color: rgba(255, 255, 255, 1) !important;
@@ -185,7 +199,7 @@ hr.light {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin-top: 1.3rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 1);
@@ -205,7 +219,7 @@ hr.light {
   color: #33334f;
   padding: 0;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   text-transform: capitalize;
   font-family: 'Roboto', sans-serif;
@@ -251,8 +265,8 @@ ul li {
 
 .list-group li {
   padding-top: 1rem;
-  font-size: 1rem;
-  font-family: 'calibriR';
+  font-size: 0.9rem;
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   color: rgba(84, 94, 111, 0.7);
 }
@@ -293,7 +307,7 @@ ul li {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   text-transform: capitalize;
   color: #2e2e48;
@@ -301,8 +315,8 @@ ul li {
 }
 
 .service-card .text-service {
-  font-size: 1rem;
-  font-family: 'calibriR';
+  font-size: 0.9rem;
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   color: rgba(84, 94, 111, 0.7);
   padding: 0.5rem 0.5rem 1rem 0.5rem;
@@ -321,7 +335,7 @@ hr {
 
 .nav-pills .nav-link,
 .nav-tabs .nav-link {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
 }
 
 .nav-pills .nav-link.active,
@@ -334,7 +348,7 @@ hr {
     #fd868c 60%,
     #fe9a8b 100%
   );
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
 }
 
 a:hover {
@@ -364,7 +378,7 @@ a {
 }
 
 .tech-heading {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   color: #293b5f;
   padding-top: 1rem;
@@ -396,7 +410,7 @@ a {
 }
 
 .tech-card .tech-title {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   margin-top: 1.5rem;
   font-size: 1.2rem;
@@ -408,7 +422,7 @@ a {
 }
 
 .service-desc {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   position: relative;
   color: rgba(84, 94, 111, 0.8);
@@ -420,7 +434,7 @@ a {
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
-  background: rgba(204, 127, 209, 0.5);
+  background: rgba(40, 20, 114, 0.5);
 }
 
 .eye {
@@ -445,7 +459,7 @@ a {
 .footer-link {
   color: #9a9a9a;
   padding-left: 5rem;
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-size: 0.85rem;
   line-height: 0;
 }
@@ -453,7 +467,7 @@ a {
 .nav-tabs .nav-link.active {
   background-color: #fbf9ff;
   color: #007bff;
-  /* font-family: 'calibriR'; */
+  /* font-family:  'Rubik', sans-serif; */
   border-bottom-color: rgb(250, 249, 255);
 }
 
@@ -477,7 +491,7 @@ a {
 
 .collapse-card-desc {
   margin-top: 8px !important;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: rgba(84, 94, 111, 0.4);
   white-space: nowrap;
   overflow: hidden;
@@ -491,7 +505,7 @@ a {
 }
 
 .is-open .nav-title {
-  color: #997fec;
+  color: #0052ca;
 }
 
 .is-open .collapse-card-desc {
@@ -503,7 +517,7 @@ a {
 
 .collapse-card .nav-title:hover,
 .collapse-card:hover > .nav-title {
-  color: #997fec;
+  color: #0052ca;
 }
 
 #portfolio {
@@ -520,7 +534,7 @@ a {
 }
 
 .count p {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   color: #293b5f;
   font-size: 1.5rem;
@@ -530,7 +544,7 @@ a {
 }
 
 .count-label {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: rgba(84, 94, 111, 0.9);
 }
 
@@ -543,9 +557,9 @@ a {
 }
 
 .phone {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0 0.5rem;
   letter-spacing: 0.3px;
   text-transform: capitalize;
@@ -557,7 +571,7 @@ a {
 }
 
 .team-title {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   margin-top: 1.5rem;
   font-size: 1.2rem;
@@ -569,9 +583,9 @@ a {
 }
 
 .team-profile {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0 0.5rem;
   letter-spacing: 0.3px;
   text-transform: capitalize;
@@ -580,9 +594,9 @@ a {
 }
 
 .btn-services {
-  background-color: #e5ffec; /* Green */
+  background-color: #e5eeff; /* Green */
   border: none;
-  color: #52e25a;
+  color: #0052ca;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -591,17 +605,20 @@ a {
   border-radius: 4px;
   outline: none;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Rubik', sans-serif;
 }
 
 .btn-services:hover {
-  background-color: #52e25a;
+  background-color: #0052ca;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .btn-services:focus {
-  background-color: #42cc49;
+  background-color: #03419a;
   color: #ffffff;
   outline: none;
+  text-decoration: none;
 }
 
 .team4 {
@@ -622,11 +639,11 @@ a {
 }
 
 .list-inline li:hover {
-  color: #997fec;
+  color: #0052ca;
 }
 
 .list-inline li:hover a {
-  color: #997fec;
+  color: #0052ca;
   text-decoration: none;
 }
 
@@ -637,7 +654,7 @@ a {
 .form-control {
   border: none;
   border: 1px solid #eeeeee;
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -661,12 +678,12 @@ a {
 }
 
 .about-company {
-  font-family: 'calibriR';
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   position: relative;
   color: rgba(84, 94, 111, 0.8);
   line-height: 24px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 0px;
   padding-top: 0.5rem;
 }
@@ -682,8 +699,8 @@ a {
 
 .footer-list a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-family: 'calibriR';
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
 }
 
@@ -704,7 +721,6 @@ a {
   font-size: 30px;
 }
 .list-inline .footer-list a {
-  padding: 16px;
   border-radius: 50%;
   text-decoration: none;
 }
@@ -722,7 +738,7 @@ a {
 
 @media (min-width: 768px) {
   header.masthead p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'Roboto', sans-serif;
   }
 }
@@ -743,8 +759,15 @@ a {
 }
 
 @media (max-width: 575.98px) {
+  .logo-f {
+    margin-left: 30%;
+  }
   section {
     padding: 4rem 1rem;
+  }
+
+  .about-company {
+    text-align: center;
   }
 
   .image-developer {
@@ -788,7 +811,7 @@ a {
 
   .nav-pills .nav-link {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .colorIcons {
